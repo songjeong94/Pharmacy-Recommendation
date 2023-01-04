@@ -32,7 +32,7 @@ public class KakaoAddressSearchService {
 
         //restapikey를 보내기위한 헤더
         HttpHeaders headers = new HttpHeaders();
-        headers.set(HttpHeaders.AUTHORIZATION, "kakoAK " +kakaoRestApiKey);
+        headers.set(HttpHeaders.AUTHORIZATION, "KakaoAK " +kakaoRestApiKey);
         HttpEntity httpEntity = new HttpEntity<>(headers);
 
         // kakao api 호출
