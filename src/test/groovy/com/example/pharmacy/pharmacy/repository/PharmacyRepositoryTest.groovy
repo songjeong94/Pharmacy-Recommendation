@@ -3,8 +3,6 @@ package com.example.pharmacy.pharmacy.repository
 import com.example.pharmacy.AbstractIntegrationContainerBaseTest
 import com.example.pharmacy.pharmacy.entity.Pharmacy
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.boot.test.context.SpringBootTest
-import spock.lang.Specification
 
 import java.time.LocalDateTime
 
