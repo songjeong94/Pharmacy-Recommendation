@@ -11,7 +11,7 @@ abstract class AbstractIntegrationContainerBaseTest extends Specification{
 
     static {
         MY_REDIS_CONTAINER = new GenericContainer<>("redis:6")
-        .withExposedPorts(6379)
+            .withExposedPorts(6379)
         //ExposedPorts는 Docker에서의 port이며 host에서 port는 test-container에서 충돌되지 않는 port를 사용해서 매핑을 한다.
 
         MY_REDIS_CONTAINER.start()

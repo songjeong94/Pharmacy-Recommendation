@@ -2,14 +2,11 @@ package com.example.pharmacy.direction.controller
 
 import com.example.pharmacy.direction.dto.OutputDto
 import com.example.pharmacy.pharmacy.service.PharmacyRecommendationService
-import com.example.pharmacy.pharmacy.service.PharmacySearchService
 import org.springframework.test.web.servlet.MockMvc
-import org.springframework.test.web.servlet.MockMvcBuilder
 import org.springframework.test.web.servlet.setup.MockMvcBuilders
 import spock.lang.Specification
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*
 

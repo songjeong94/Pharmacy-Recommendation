@@ -11,7 +11,7 @@ class PharmacyRepositoryServiceTest extends AbstractIntegrationContainerBaseTest
     @Autowired
     private PharmacyRepositoryService pharmacyRepositoryService
     @Autowired
-    private PharmacyRepository pharmacyRepository;
+    private PharmacyRepository pharmacyRepository
 
     //각 메서드 시작 전 실행
     def setup() {

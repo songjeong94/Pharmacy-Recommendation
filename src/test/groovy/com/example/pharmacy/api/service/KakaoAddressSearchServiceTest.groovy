@@ -2,7 +2,6 @@ package com.example.pharmacy.api.service
 
 import com.example.pharmacy.AbstractIntegrationContainerBaseTest
 import org.springframework.beans.factory.annotation.Autowired
-import spock.lang.Specification
 
 class KakaoAddressSearchServiceTest extends AbstractIntegrationContainerBaseTest {
 
@@ -36,14 +35,14 @@ class KakaoAddressSearchServiceTest extends AbstractIntegrationContainerBaseTest
     def "정상적인 주소를 입력했을 경우, 정상적으로 위도 경도로 변환 된다."() {
 
         given:
-        boolean actualresult = false
+        boolean actualResult = false
 
         when:
         def searchResult = kakaoAddressSearchService.requestAddressSearch(inputAddress)
 
         then:
-        if(searchResult == null) actualresult = false
-        else actualresult = searchResult.getDocumentList().size() > 0
+        if(searchResult == null) actualResult = false
+        else actualResult = searchResult.getDocumentList().size() > 0
 
         where:
         inputAddress                 | expectedResult
