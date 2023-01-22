@@ -17,14 +17,14 @@ import java.net.URI;
 @RequiredArgsConstructor
 public class KakaoCategorySearchService {
 
-    private KakaoUriBuilderService kakaoUriBuilderService;
+    private final KakaoUriBuilderService kakaoUriBuilderService;
 
     private final RestTemplate restTemplate;
 
 
     private static final String PHARMACY_CATEGORY = "PM9";
 
-    @Value("${KAKAO_REST_API_KEY}")
+    @Value("${kakao.rest.api.key}")
     private String kakaoRestApiKey;
 
     public KakaoApiResponseDto requestPharmacyCategorySearch(double latitude, double longitude, double radius) {

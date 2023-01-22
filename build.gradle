@@ -49,8 +49,8 @@ dependencies {
     testImplementation('net.bytebuddy:byte-buddy:1.12.20')
 
     // testcontainers
-    testImplementation 'org.testcontainers:spock:1.17.1'
-    testImplementation 'org.testcontainers:mariadb:1.17.1'
+    testImplementation 'org.testcontainers:spock:1.17.6'
+    testImplementation 'org.testcontainers:mariadb:1.17.6'
 
     // spring retry
     implementation 'org.springframework.retry:spring-retry'
@@ -72,3 +72,4 @@ processTestResources {
         expand(project.properties)
     }
 }
+
